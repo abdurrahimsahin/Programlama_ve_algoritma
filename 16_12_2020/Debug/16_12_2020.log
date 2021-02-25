@@ -1,0 +1,3 @@
+﻿  16_12_2020.cpp
+E:\sistem\pc\Desktop\Abdurrahim\Cod Dosyası\Programlama ve algoritma dersi\16_12_2020\16_12_2020.cpp(29,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  16_12_2020.vcxproj -> E:\sistem\pc\Desktop\Abdurrahim\Cod Dosyası\Programlama ve algoritma dersi\16_12_2020\Debug\16_12_2020.exe

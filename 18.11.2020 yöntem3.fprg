@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-18 11:48:14 &#214;&#214;"/>
+        <attribute name="created" value="Y2FzcGVyO0RFU0tUT1AtQ0JCVDVHTzsyMDIwLTExLTE4OzExOjM3OjQ5IMOWw5Y7MzI2Mg=="/>
+        <attribute name="edited" value="Y2FzcGVyO0RFU0tUT1AtQ0JCVDVHTzsyMDIwLTExLTE4OzExOjQ4OjE0IMOWw5Y7MTszMzY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kenar1, kenar2, alan, cevre" type="Real" array="False" size=""/>
+            <assign variable="kenar1" expression="0"/>
+            <assign variable="kenar2" expression="0"/>
+            <while expression="kenar1&lt;=0">
+                <output expression="&quot;1.Kenar:&quot;" newline="True"/>
+                <input variable="kenar1"/>
+            </while>
+            <while expression="kenar2&lt;=0">
+                <output expression="&quot;2.Kenar:&quot;" newline="True"/>
+                <input variable="kenar2"/>
+            </while>
+            <assign variable="alan" expression="kenar1*kenar2"/>
+            <assign variable="cevre" expression="(kenar1+kenar2)*2"/>
+            <output expression="&quot;&#199;evre:&quot;&amp;cevre&amp;&quot;&#13;&#10;Alan:&quot;&amp;alan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

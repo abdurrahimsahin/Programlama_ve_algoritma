@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-23 11:39:48 &#214;&#214;"/>
+        <attribute name="created" value="Y2FzcGVyO0ZBTENPTjsyMDIwLTEyLTIzOzEwOjE2OjUwIMOWw5Y7MjYxMw=="/>
+        <attribute name="edited" value="Y2FzcGVyO0ZBTENPTjsyMDIwLTEyLTIzOzExOjM5OjQ4IMOWw5Y7MTsyNzM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, islem, puan, sonuc, hak, tahmin" type="Integer" array="False" size=""/>
+            <assign variable="puan" expression="0"/>
+            <assign variable="hak" expression="3"/>
+            <do expression="hak!=0">
+                <assign variable="sayi1" expression="random(10)+1"/>
+                <assign variable="sayi2" expression="random(10)+1"/>
+                <assign variable="islem" expression="random(3)+1"/>
+                <if expression="islem=1">
+                    <then>
+                        <assign variable="sonuc" expression="sayi1+sayi2"/>
+                        <output expression="sayi1 &amp; &quot;+&quot; &amp; sayi2 &amp; &quot;=?&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="islem=2">
+                            <then>
+                                <assign variable="sonuc" expression="sayi1-sayi2"/>
+                                <output expression="sayi1 &amp; &quot;-&quot; &amp; sayi2 &amp; &quot;=?&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <assign variable="sonuc" expression="sayi1*sayi2"/>
+                                <output expression="sayi1 &amp; &quot;*&quot; &amp; sayi2 &amp; &quot;=?&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <input variable="tahmin"/>
+                <if expression="tahmin=sonuc">
+                    <then>
+                        <assign variable="puan" expression="puan+1"/>
+                        <output expression="&quot;Dogru tahmin.Puan&#305;n&#305;z=&quot; &amp; puan" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="hak" expression="hak-1"/>
+                        <output expression="&quot;Yanl&#305;&#351; tahmin.Kalan hakk&#305;n&#305;z=&quot;&amp; hak" newline="True"/>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;Oyun bitti. Puan&#305;n&#305;z:&quot; &amp; puan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-18 12:36:40 &#214;S"/>
+        <attribute name="created" value="Y2FzcGVyO0RFU0tUT1AtQ0JCVDVHTzsyMDIwLTExLTE4OzExOjQ4OjE3IMOWw5Y7MzI1OQ=="/>
+        <attribute name="edited" value="Y2FzcGVyO0RFU0tUT1AtQ0JCVDVHTzsyMDIwLTExLTE4OzEyOjM2OjQwIMOWUzsxOzMyMzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <declare name="delta, x1, x2" type="Real" array="False" size=""/>
+            <output expression="&quot;a:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b:&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;c:&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="b*b-4*a*c"/>
+            <if expression="delta&gt;0">
+                <then>
+                    <assign variable="x1" expression="(-b+delta*(1/2))/(2*a)"/>
+                    <assign variable="x2" expression="(-b-delta*(1/2))/(2*a)"/>
+                    <output expression="&quot;x1=&quot;&amp; x1 &amp;&quot;x2=&quot;&amp;x2" newline="True"/>
+                </then>
+                <else>
+                    <comment text="delta 0 durumu"/>
+                    <if expression="delta&lt;0">
+                        <then>
+                            <output expression="&quot;Denklemin ger&#231;el k&#246;k&#252; yok&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="x1" expression="-b/(2*a)"/>
+                            <assign variable="x2" expression="-b/(2*a)"/>
+                            <output expression="&quot;x1=&quot;&amp; x1 &amp;&quot;x2=&quot;&amp;x2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

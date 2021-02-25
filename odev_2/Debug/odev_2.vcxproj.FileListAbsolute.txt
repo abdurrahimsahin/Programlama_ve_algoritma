@@ -1,0 +1,2 @@
+C:\Users\casper\source\repos\odev_2\Debug\odev_2.exe
+C:\Users\casper\source\repos\odev_2\Debug\odev_2.pdb

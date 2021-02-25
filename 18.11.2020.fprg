@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-18 11:18:51 &#214;&#214;"/>
+        <attribute name="created" value="Y2FzcGVyO0RFU0tUT1AtQ0JCVDVHTzsyMDIwLTExLTE4OzEwOjA2OjM1IMOWw5Y7MzI1Mg=="/>
+        <attribute name="edited" value="Y2FzcGVyO0RFU0tUT1AtQ0JCVDVHTzsyMDIwLTExLTE4OzExOjE4OjUxIMOWw5Y7MjszMzYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Kenar1, Kenar2, Alan, Cevre" type="Real" array="False" size=""/>
+            <output expression="&quot;Kenar1:&quot;" newline="True"/>
+            <input variable="Kenar1"/>
+            <if expression="Kenar1&lt;0">
+                <then>
+                    <assign variable="kenar1" expression="kenar1*-1"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Kenar2:&quot;" newline="True"/>
+            <input variable="Kenar2"/>
+            <if expression="Kenar2&lt;0">
+                <then>
+                    <assign variable="kenar2" expression="kenar2*-1"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="Alan" expression="Kenar1*Kenar2"/>
+            <assign variable="Cevre" expression="(Kenar1+Kenar2)*2"/>
+            <if expression="alan=0">
+                <then>
+                    <output expression="&quot;Kenar de&#287;eri 0 olamaz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Cevre=&quot;&amp;cevre&amp;&#13;&#10;&quot;Alana=&quot;&amp;alan" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
